@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: montserrat;
+  src: url('../src/assets/fonts/Montserrat-Medium.ttf');
+}
+
+body {
+  background-color: #131826;
+  margin: 0;
+  font-family: 'montserrat';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.sidebar-w {
+  min-width: 240px;
+}
+
+.sidebar-gradient {
+  background: radial-gradient(93.14% 50% at 50% 100%, #29334A 0%, rgba(19, 24, 38, 0) 100%);
+  /* opacity: 0.88; */
+}
+
+.header-w {
+  width: calc(100% - 240px);
+
+}
+
+@media only screen and (max-width: 640px) {
+  .header-w {
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background: 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(203, 215, 255, .1);
+  border-radius: 6px;
+  border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: 0 0;
+}
+
+.hero1{
+  /* position: relative; */
+  right: 0.5rem;
+  background-image: url('../src/assets/images/hero1.svg');
+  background-repeat: no-repeat;
+}
